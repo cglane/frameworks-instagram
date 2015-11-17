@@ -1,0 +1,23 @@
+{
+  "name": "frameworks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "backbone": "^1.2.3",
+    "browserify": "^12.0.1",
+    "jquery": "^2.1.4",
+    "underscore": "^1.8.3",
+    "watchify": "^3.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "bundle": "./node_modules/.bin/browserify main.js -o bundle.js -dv",
+    "watch": "./node_modules/.bin/watchify main.js -o bundle.js -dv & ./node_modules/.bin/node-sass styles.scss styles.css -w",
+    "serve": "./node_modules/.bin/serve",
+    "sass": "./node_modules/.bin/node-sass styles.scss styles.css",
+    "start": "npm run watch & npm run serve"
+  },
+  "author": "",
+  "license": "ISC"
+}

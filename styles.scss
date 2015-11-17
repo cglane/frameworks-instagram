@@ -1,0 +1,59 @@
+h1{
+  color: green;
+}
+.container{
+  z-index: 0;
+  width: 100%;
+  min-height: 800px;
+  overflow: hidden;
+  background-image: url("http://labs4.kentooz.com/wpwallpaper/wp-content/uploads/2013/04/Nature-Wallpaper-99.jpg");
+  background-size: cover;
+  background-repeat: none;
+  .on-move-mouse{
+    font-size: 4em;
+    font-family: "Oswald";
+    z-index: 1;
+    background: transparent;
+    color: white;
+    left: 40%;
+    top: 200px;
+
+  }
+
+}
+.col-sm-3{
+  img{
+    width: 100%;
+  }
+}
+.col-sm-6{
+  form{
+    width: 80%;
+    margin-left: 16%;
+  }
+  input{
+    min-width: 300px;
+  }
+  .picture-posts{
+    width: 60%;
+    margin: auto;
+    img{
+      width: 100%;
+    }
+    &child{
+      position: absolute;
+      right:69%;
+
+    }
+
+  }
+}
+.display-block{
+  display: block;
+}
+.display-none{
+  display: none;
+}
+.position-fixed{
+  position: fixed;
+}
